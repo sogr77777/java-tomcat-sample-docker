@@ -1,8 +1,5 @@
 FROM tomcat:8.0
-RUN ls -rtla
 RUN pwd
+RUN ls -rtla
 RUN hostname
-
-RUN cp -a *.war /usr/local/tomcat/webapps/
-EXPOSE 8080
 CMD ["catalina.sh", "run"]
